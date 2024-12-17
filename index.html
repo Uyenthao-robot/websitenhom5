@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm 5 - Trang Chủ</title>
+    <style>
+        /* Cấu hình chung */
+        body {
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #FFEECC, #FFF7E1);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #FF9933, #FFCC99);
+            color: #FFF;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px dashed #FF6600;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: rainbowText 2s infinite;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            background: linear-gradient(to right, #FF6600, #FF9966);
+            overflow: hidden;
+            border-bottom: 3px solid #FF3300;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #FFF;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #FF3300;
+            transform: rotate(-10deg);
+        }
+
+        /* Phần chính */
+        main {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section h3 {
+            color: #FF3300;
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 2px 2px #FF9966;
+        }
+
+        .song-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .members-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .members-list li {
+            text-align: center;
+            font-size: 1.2em;
+            color: #FF3300;
+            transition: transform 0.5s;
+        }
+        .members-list li:hover {
+            transform: rotate(10deg) scale(1.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(45deg, #FFCC99, #FF9966);
+            color: #663300;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #663300;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng */
+        @keyframes rainbowText {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: green; }
+            100% { color: blue; }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chào mừng đến với Nhóm 5</h1>
+</header>
+
+<nav>
+    <a href="#members">Thành viên nhóm</a>
+    <a href="#assignments">Bài tập</a>
+    <a href="#activities">Hoạt động khác</a>
+</nav>
+
+<main>
+    <section id="intro">
+        <h2>Giới thiệu nhóm</h2>
+        <p>Chào mừng bạn đến với trang web của Nhóm 5! Chúng tôi là một nhóm sáng tạo, năng động và yêu thích học hỏi. Dưới đây là bài hát giới thiệu nhóm của chúng tôi. Hãy nghe và cảm nhận!</p>
+        <div style="text-align: center; font-size: 3em;">🎭</div>
+    </section>
+
+    <section id="song" class="song-container">
+        <h3>Bài hát giới thiệu của nhóm</h3>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/frAhxXbLetk?si=1H3T7G9k3g5xRJXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="members">
+        <h3>Thành viên nhóm</h3>
+        <ul class="members-list">
+            <li>
+                <a href="https://uyenthao-robot.github.io/thao/">
+                    Trần Hồng Uyên Thảo
+                </a>
+                <div style="font-size: 2.5em;">🎭</div>
+            </li>
+            <li>
+                <a href="https://uyenthao-robot.github.io/nghi/">
+                    Trần Quang Nghị
+                </a>
+                <div style="font-size: 2.5em;">🎭</div>
+            </li>
+            <li>
+                <a href="https://uyenthao-robot.github.io/hang/">
+                    Trần Nguyệt Hằng
+                </a>
+                <div style="font-size: 2.5em;">🎭</div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="assignments">
+        <h3>Bài tập</h3>
+        <p>Tất cả bài tập nhóm sẽ được cập nhật ở đây. Hãy thường xuyên kiểm tra để không bỏ lỡ bất kỳ thông tin quan trọng nào!</p>
+        <ul>
+            <li><a href="https://www.canva.com/design/DAGR2e3IUsE/14UNynH86W7YD6uawFpVgg/edit" target="_blank">Luyện tập và Vận dụng:</a></li
+        </ul>
+    </section>
+
+    <section id="activities">
+        <h3>Hoạt động khác</h3>
+        <p>Nhóm tham gia các hoạt động như học nhóm, dã ngoại, và các buổi chia sẻ kiến thức. Thông tin chi tiết sẽ được cập nhật tại đây.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Email nhóm: <a href="mailto:nhom5@example.com">nhom5@example.com</a></p>
+    <p>Số điện thoại liên lạc: <a href="tel:+84123456789">+84 123 456 789</a></p>
+</footer>
+
+</body>
+</html>
